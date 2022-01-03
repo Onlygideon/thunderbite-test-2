@@ -1,0 +1,13 @@
+{
+  "name": "wheel-of-fortune",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "type": "module"
+}

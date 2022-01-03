@@ -1,0 +1,24 @@
+{
+    "Name": "Thunderbite wheel of future",
+    "Positions": [
+        {
+            "Position": 1,
+            "Content": "dragon"
+        },
+
+        {
+            "Position": 2,
+            "Content": "dragon"
+        },
+
+        {
+            "Position": 3,
+            "Content": "dragon"
+        },
+
+        {
+            "Position": 4,
+            "Content": "dragon"
+        }
+    ]
+}

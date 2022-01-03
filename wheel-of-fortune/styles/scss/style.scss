@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: slateblue;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    #header {
+        height: 100%;
+
+        .background {
+            background-repeat: no-repeat cover/center center;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    #main {
+        width: 400px;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        .marker {
+            position: absolute;
+            width: 40px;
+            top: -40px;
+            z-index: 2;
+        }
+    
+        .wheel {
+            width: 100%;
+            height: 100%;
+        }
+    
+        .button {
+            display: block;
+            width: 250px;
+            margin: 40px auto;
+            cursor: pointer;
+            animation: vertical 1.8s linear infinite alternate; 
+        }
+        
+        .button:hover {
+            opacity: 0.8;
+        }
+
+        .blur {
+            animation: blury 10s;
+        }
+
+        .displayBox {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 200px;
+            height: 50px;
+            border: 2px solid black;
+            border-radius: 20px;
+            background-color: #e6e4ff;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.1rem;
+            margin: 20px auto;
+        }
+    
+    }
+}
+
+
+@keyframes vertical {
+    0% {
+      transform: scale(0.92);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+}
+
+
+
+@keyframes blury {
+    0% {
+      filter: blur(2.5px);
+    }
+
+    80% {
+        filter: blur(1.5px);
+    }
+  
+    100% {
+      filter: blur(0px);
+    }
+}
+
+
+
+@media screen and (max-width: 698px) {
+    body {
+        #header {
+            height: 100%;
+    
+            .background {
+                background-repeat: no-repeat cover/center center;
+                object-fit: cover;
+            }
+        }
+
+        #main {
+            width: 100%;
+
+            
+            .marker {
+                width: 28px;
+                top: -40px;
+            }
+
+            .wheel {
+                width: 70%;
+                height: 70%;
+            }
+
+            .button {
+                width: 180px;
+                margin: 20px auto;
+            }
+
+            .displayBox {
+                width: 120px;
+                height: 40px;
+                font-size: 0.7rem;
+                margin: 20px auto;
+            }
+        }
+    }
+}
